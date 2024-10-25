@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gujju E-Market</title>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+
+<body>
+
+    <!-- Top Bar -->
+    <div class="top-bar bg-warning text-white py-2">
+        <div class="container d-flex justify-content-between align-items-center">
+            <span>Offer Zone Top Deals & Discounts</span>
+            <div>
+                <a href="#" class="text-white mx-2">Select Location <i class="fas fa-map-marker-alt"></i></a> |
+                <a href="#" class="text-white mx-2">Track Order</a> |
+                <a href="tel:+0012345678" class="text-white mx-2">001 234 5678</a> |
+                <a href="#" class="text-white mx-2">Log In</a> |
+                <a href="#" class="text-white mx-2">Register</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container" style="padding: 2px;">
+            <a class="navbar-brand" href="#">
+                <img src="images/gujju-logo.jpg" alt="Electro Store Logo" style="max-height: 50px;">
+            </a>
+
+            <!-- Search Bar -->
+            <form class="d-flex search-bar ml-3">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-danger" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+
+    <!-- Navbar 2-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+
+            <div class="dropdown">
+                <button class="btn btn-light dropdown-toggle" type="button" id="categoryDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                    Shop By Categories
+                </button>
+                <ul class="dropdown-menu wrap-dropdown" aria-labelledby="categoryDropdown">
+                    <li><a class="dropdown-item" href="#">Mobiles & Tablets</a></li>
+                    <li><a class="dropdown-item" href="#">Electronics</a></li>
+                    <li><a class="dropdown-item" href="#">Home Appliances</a></li>
+                    <li><a class="dropdown-item" href="#">Computers</a></li>
+                    <li><a class="dropdown-item" href="#">Mobiles & Tablets</a></li>
+                    <li><a class="dropdown-item" href="#">Electronics</a></li>
+                    <li><a class="dropdown-item" href="#">Home Appliances</a></li>
+                    <li><a class="dropdown-item" href="#">Computers</a></li>
+                    <li><a class="dropdown-item" href="#">Mobiles & Tablets</a></li>
+                    <li><a class="dropdown-item" href="#">Electronics</a></li>
+                    <li><a class="dropdown-item" href="#">Home Appliances</a></li>
+                    <li><a class="dropdown-item" href="#">Computers</a></li>
+                    <li><a class="dropdown-item" href="#">Mobiles & Tablets</a></li>
+                    <li><a class="dropdown-item" href="#">Electronics</a></li>
+                    <li><a class="dropdown-item" href="#">Home Appliances</a></li>
+                    <li><a class="dropdown-item" href="#">Computers</a></li>
+                    <li><a class="dropdown-item" href="#">Mobiles & Tablets</a></li>
+                    <li><a class="dropdown-item" href="#">Electronics</a></li>
+                    <li><a class="dropdown-item" href="#">Home Appliances</a></li>
+                    <li><a class="dropdown-item" href="#">Computers</a></li>
+                </ul>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <!--
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="electronicsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Electronics
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="electronicsDropdown">
+                            <li><a class="dropdown-item" href="#">Mobiles, Computers</a></li>
+                            <li><a class="dropdown-item" href="#">Laptops</a></li>
+                            <li><a class="dropdown-item" href="#">Drives & Storage</a></li>
+                            <li><a class="dropdown-item" href="#">Printers & Ink</a></li>
+                            <li><a class="dropdown-item" href="#">Networking Devices</a></li>
+                            <li><a class="dropdown-item" href="#">Computer Accessories</a></li>
+                        </ul>
+                    </li>
+                    -->
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="fas fa-user"></i>
+                    </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="fas fa-shopping-cart"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Carousel Section (Banner) -->
+    <div class="container-x" id="carousel-banner">
+        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="3000">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="images/carasoul-1.jpg" class="d-block w-100 img-fluid" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5 class="carousel-title">First slide label</h5>
+                        <p class="carousel-paragraph">Some representative placeholder content for the first slide.</p>
+                        <div class="btn btn-success" id="carasoul-button">
+                            <a href="#" class="text-white text-decoration-none">Shop</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/carasoul-1.jpg" class="d-block w-100 img-fluid" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5 class="carousel-title">Second slide label</h5>
+                        <p class="carousel-paragraph">Some representative placeholder content for the second slide.</p>
+                        <div class="btn btn-success" id="carasoul-button">
+                            <a href="#" class="text-white text-decoration-none">Shop</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/carasoul-1.jpg" class="d-block w-100 img-fluid" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5 class="carousel-title">Third slide label</h5>
+                        <p class="carousel-paragraph">Some representative placeholder content for the third slide.</p>
+                        <div class="btn btn-success" id="carasoul-button">
+                            <a href="#" class="text-white text-decoration-none">Shop</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Carousel Indicators -->
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleFade" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleFade" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleFade" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+
+            <!-- Previous and Next Controls -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+
+
+
+    <!-- Body Section -->
+
+    <!-- category -->
+
+    <h2 class="text-center"> Category</h2>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-4 col-sm-6 col-md-2 mb-4">
+                <div class="card" id="category-card">
+                    <img src="images/baby-pic.jpeg" class="card-img-top" alt="Product 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Category Title 1</h5>
+                        <button class="btn btn-primary" id="card-button">
+                            <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4 col-sm-6 col-md-2 mb-4">
+                <div class="card" id="category-card">
+                    <img src="images/baby-pic.jpeg" class="card-img-top" alt="Product 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Category Title 2</h5>
+                        <button class="btn btn-primary" id="card-button">
+                            <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4 col-sm-6 col-md-2 mb-4">
+                <div class="card" id="category-card">
+                    <img src="images/baby-pic.jpeg" class="card-img-top" alt="Product 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Category Title 3</h5>
+                        <button class="btn btn-primary" id="card-button">
+                            <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-4 col-sm-6 col-md-2 mb-4">
+                <div class="card" id="category-card">
+                    <img src="images/baby-pic.jpeg" class="card-img-top" alt="Product 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Category Title 3</h5>
+                        <button class="btn btn-primary" id="card-button">
+                            <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-4 col-sm-6 col-md-2 mb-4">
+                <div class="card" id="category-card">
+                    <img src="images/baby-pic.jpeg" class="card-img-top" alt="Product 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Category Title 3</h5>
+                        <button class="btn btn-primary" id="card-button">
+                            <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-4 col-sm-6 col-md-2 mb-4">
+                <div class="card" id="category-card">
+                    <img src="images/baby-pic.jpeg" class="card-img-top" alt="Product 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Category Title 3</h5>
+                        <button class="btn btn-primary" id="card-button">
+                            <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-12 mb-4">
+
+
+                <div class="" style="text-align: right; justify-content:right ; display: flex;">
+                    <h5 class="card-title">
+                        <a href="category_page.html" style="text-decoration: none; color: black;">View More...</a>
+                    </h5>
+                    <button class="btn btn-primary" id="card-button">
+                            <i class="fas fa-arrow-right"></i>
+                        </button>
+                </div>
+
+            </div>
+
+            <!-- Add more cards as needed -->
+        </div>
+
+    </div>
+
+
+    <!-- Bank Offer -->
+
+    <div class="container mt-lg-0">
+        <div class="row">
+            <div class="col-6 col-sm-6 col-md-6 mb-4">
+                <div class="card" id="product-card">
+                    <img src="images/bank-offer-1.png" class="card-img-top img-fluid" alt="Product 1">
+                </div>
+            </div>
+            <div class="col-6 col-sm-6 col-md-6 mb-4">
+                <div class="card" id="product-card">
+                    <img src="images/bank-offer-2.png" class="card-img-top" alt="Product 2">
+                </div>
+            </div>
+            <div class="" style="text-align: right; justify-content:right ; display: flex;">
+                <h5 class="card-title">View More...</h5>
+                <button class="btn btn-primary" id="card-button">
+                    <i class="fas fa-arrow-right"></i>
+                </button>
+            </div>
+        </div>
+        <!-- Add more cards as needed -->
+    </div>
+
+    <!-- New Arriable -->
+
+    <h2 class="text-center"> New Arrivals </h2>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-6 col-sm-6 col-md-4 mb-4">
+                <div class="card" id="product-card">
+                    <img src="images/product-2.jpg" class="card-img-top img-fluid" alt="Product 1">
+                    <div class="card-body">
+                        <h5 class="card-title">New Product 1</h5>
+                        <button class="btn btn-primary" id="card-button">
+                            <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-sm-6 col-md-4 mb-4">
+                <div class="card" id="product-card">
+                    <img src="images/product-2.jpg" class="card-img-top" alt="Product 2">
+                    <div class="card-body">
+                        <h5 class="card-title">New Product 2</h5>
+                        <button class="btn btn-primary" id="card-button">
+                            <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-sm-6 col-md-4 mb-4">
+                <div class="card" id="product-card">
+                    <img src="images/product-2.jpg" class="card-img-top" alt="Product 3">
+                    <div class="card-body">
+                        <h5 class="card-title">New Product 3</h5>
+                        <button class="btn btn-primary" id="card-button">
+                            <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6 col-sm-6 col-md-4 mb-4">
+                <div class="card" id="product-card">
+                    <img src="images/product-2.jpg" class="card-img-top" alt="Product 3">
+                    <div class="card-body">
+                        <h5 class="card-title">New Product 3</h5>
+                        <button class="btn btn-primary" id="card-button">
+                            <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6 col-sm-6 col-md-4 mb-4">
+                <div class="card" id="product-card">
+                    <img src="images/product-2.jpg" class="card-img-top" alt="Product 3">
+                    <div class="card-body">
+                        <h5 class="card-title">New Product 3</h5>
+                        <button class="btn btn-primary" id="card-button">
+                            <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6 col-sm-6 col-md-4 mb-4">
+                <div class="card" id="product-card">
+                    <img src="images/product-2.jpg" class="card-img-top" alt="Product 3">
+                    <div class="card-body">
+                        <h5 class="card-title">New Product 3</h5>
+                        <button class="btn btn-primary" id="card-button">
+                            <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-12 mb-4">
+
+
+                <div class="" style="text-align: right; justify-content:right ; display: flex;">
+                    <h5 class="card-title">View More...</h5>
+                    <button class="btn btn-primary" id="card-button">
+                            <i class="fas fa-arrow-right"></i>
+                        </button>
+                </div>
+
+            </div>
+
+            <!-- Add more cards as needed -->
+        </div>
+
+    </div>
+
+
+    <!-- Br -->
+
+    <h2 class="text-center"> Brands </h2>
+    <div class="container-brand mt-0">
+        <div class="row">
+            <div class="col-2 col-sm-6 col-md-2 mb-4">
+                <div class="card" id="brand-image-card">
+                    <img src="images/amazon-logo.png" class="card-img-top img-fluid" alt="Product 1">
+                </div>
+            </div>
+            <div class="col-2 col-sm-6 col-md-2 mb-4">
+                <div class="card" id="brand-image-card">
+                    <img src="images/amazon-logo.png" class="card-img-top img-fluid" alt="Product 1">
+                </div>
+            </div>
+            <div class="col-2 col-sm-6 col-md-2 mb-4">
+                <div class="card" id="brand-image-card">
+                    <img src="images/amazon-logo.png" class="card-img-top img-fluid" alt="Product 1">
+                </div>
+            </div>
+            <div class="col-2 col-sm-6 col-md-2 mb-4">
+                <div class="card" id="brand-image-card">
+                    <img src="images/amazon-logo.png" class="card-img-top img-fluid" alt="Product 1">
+                </div>
+            </div>
+            <div class="col-2 col-sm-6 col-md-2 mb-4">
+                <div class="card" id="brand-image-card">
+                    <img src="images/amazon-logo.png" class="card-img-top img-fluid" alt="Product 1">
+                </div>
+            </div>
+            <div class="col-2 col-sm-6 col-md-2 mb-4">
+                <div class="card" id="brand-image-card">
+                    <img src="images/amazon-logo.png" class="card-img-top img-fluid" alt="Product 1">
+                </div>
+            </div>
+            <!-- Add more cards as needed -->
+        </div>
+
+    </div>
+
+
+    <!-- Body Section end -->
+
+    <!-- Footer -->
+    <footer class="bg-orange text-light py-5">
+        <div class="container">
+            <div class="row">
+                <!-- Connect With Us -->
+                <div class="col-6 col-sm-6 col-md-3 mb-4">
+                    <h5>CONNECT WITH US</h5>
+                    <div class="mb-3">
+                        <input type="email" class="form-control" placeholder="Enter Email ID" aria-label="Enter Email ID">
+                    </div>
+                    <div class="social-icons">
+                        <a href="#" class="text-light me-2"><i class="fab fa-youtube"></i></a>
+                        <a href="#" class="text-light me-2"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-light me-2"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-light me-2"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="text-light"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+
+                <!-- Useful Links -->
+                <div class="col-6 col-sm-6 col-md-3 mb-4">
+                    <h5>USEFUL LINKS</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-light">About Croma</a></li>
+                        <li><a href="#" class="text-light">Help And Support</a></li>
+                        <li><a href="#" class="text-light">FAQs</a></li>
+                        <li><a href="#" class="text-light">Buying Guide</a></li>
+                        <li><a href="#" class="text-light">Return Policy</a></li>
+                        <li><a href="#" class="text-light">B2B Orders</a></li>
+                        <li><a href="#" class="text-light">Store Locator</a></li>
+                        <li><a href="#" class="text-light">E-Waste</a></li>
+                        <li><a href="#" class="text-light">Franchise Opportunity</a></li>
+                    </ul>
+                </div>
+
+                <!-- More Links -->
+                <div class="col-6 col-sm-6 col-md-3 mb-4">
+                    <h5>Info &nbsp;</h5>
+                    <!-- Empty heading to align with other columns -->
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-light">Site Map</a></li>
+                        <li><a href="#" class="text-light">Careers At Croma</a></li>
+                        <li><a href="#" class="text-light">Terms Of Use</a></li>
+                        <li><a href="#" class="text-light">Disclaimer</a></li>
+                        <li><a href="#" class="text-light">Privacy Policy</a></li>
+                        <li><a href="#" class="text-light">Unboxed</a></li>
+                        <li><a href="#" class="text-light">Gift Card</a></li>
+                        <li><a href="#" class="text-light">Croma E-Star</a></li>
+                    </ul>
+                </div>
+
+                <!-- Products Links -->
+                <div class="col-6 col-sm-6 col-md-3 mb-4">
+                    <h5>PRODUCTS</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-light">Televisions & Accessories</a></li>
+                        <li><a href="#" class="text-light">Home Appliances</a></li>
+                        <li><a href="#" class="text-light">Phones & Wearables</a></li>
+                        <li><a href="#" class="text-light">Computers & Tablets</a></li>
+                        <li><a href="#" class="text-light">Kitchen Appliances</a></li>
+                        <li><a href="#" class="text-light">Audio & Video</a></li>
+                        <li><a href="#" class="text-light">Health & Fitness</a></li>
+                        <li><a href="#" class="text-light">Grooming & Personal Care</a></li>
+                        <li><a href="#" class="text-light">Cameras & Accessories</a></li>
+                        <li><a href="#" class="text-light">Smart Devices</a></li>
+                        <li><a href="#" class="text-light">Gaming</a></li>
+                        <li><a href="#" class="text-light">Accessories</a></li>
+                        <li><a href="#" class="text-light">Top Brands</a></li>
+                    </ul>
+                </div>
+                <!-- Copyright Section -->
+
+                <div class="col-12 text-center">
+                    <p class="mb-0">© Copyright 2023 Seller Sathi. All rights reserved</p>
+                </div>
+
+            </div>
+
+
+        </div>
+    </footer>
+
+
+    <!-- Bootstrap JS (with Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
