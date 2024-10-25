@@ -347,6 +347,15 @@
     .card-title {
         font-size: 10px;
     }
+    #brand-image-card {
+        img {
+            gap: auto;
+            width: auto;
+            height: auto;
+            padding: 5px;
+            background-size: cover;
+        }
+    }
 }
 
 
@@ -363,6 +372,18 @@
         height: 80px;
         padding: 10px;
         background-size: cover;
+    }
+}
+
+@media (max-width: 576px) {
+    #brand-image-card {
+        img {
+            gap: auto;
+            width: auto;
+            height: auto;
+            padding: 5px;
+            background-size: cover;
+        }
     }
 }
 
